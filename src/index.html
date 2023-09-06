@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="./styles/Css/style.css"></link>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_flexbox">
+            <div></div>
+            <ul class="flexbox_navigation">
+                <li class="navigation_item link">About us</li>
+                <li class="navigation_item link">Brands</li>
+                <li class="navigation_item link">Commissions</li>
+                <li class="navigation_item link">News</li>
+                <li class="navigation_item link">Contact us</li>
+                <li class="navigation_item link">Careers</li>
+            </ul>
+            <div class="flexbox_container">
+                <button class="container_button button">
+                    <img class="button_image" src="./assets/image/Union.png" alt="Union" />
+                    EN
+                </button>
+                <button class="container_button button">LOG IN</button>
+                <button class="container_button button_sign">SIGN UP</button>
+            </div>
+        </div>
+    </header>
+    <header class="header_small">
+        <button class="small_button-lang">
+            <img class="button_image-small" src="./assets/image/Union.png" alt="union" />
+        </button>
+        <img onclick="OpenModal()" class="small_image small_image-burger" src="./assets/image/burger.png" alt="burger" />
+        <img onclick="CloseModal()" class="small_image small_image-close" src="./assets/image/Close.png" alt="close" />
+    </header>
+    <div class="modal">
+        <ul class="modal_navigation">
+            <li class="navigation_item button">About us</li>
+            <li class="navigation_item button">Brands</li>
+            <li class="navigation_item button">Commissions</li>
+            <li class="navigation_item button">News</li>
+            <li class="navigation_item button">Contact us</li>
+            <li class="navigation_item button">Careers</li>
+        </ul>
+        <button class="modal_button button">LOG IN</button>
+        <button class="modal_button button_sign">SIGN UP</button>
+    </div>
+    <main class="main">
+        <div class="main_banner">
+            <p class="banner_label">HOUSE OF</p>
+            <p class="banner_label-second">GAMBLING</p>
+            <p class="banner_paragraph">Raise your ROI with direct advertiser</p>
+            <button class="banner_button">Become a Partner</button>
+        </div>
+        <div class="main_blog">
+            <p class="blog_label">BLOG</p>
+            <div class="blog_container">
+                <div class="scroll_line"></div>
+                <div class="scroll_bar"></div>
+                <div class="blog_scroll" onscroll="myScroll()" id="test">
+                    <div class="scroll_item scroll_item-active">
+                        <p class="item_label">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                        <p class="item_data">10.02.2023</p>
+                    </div>
+                    <div class="scroll_item">
+                        <p class="item_label">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                        <p class="item_data">10.02.2023</p>
+                    </div>
+                    <div class="scroll_item">
+                        <p class="item_label">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                        <p class="item_data">10.02.2023</p>
+                    </div>
+                    <div class="scroll_item">
+                        <p class="item_label">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                        <p class="item_data">10.02.2023</p>
+                    </div>
+                    <div class="scroll_item">
+                        <p class="item_label">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                        <p class="item_data">10.02.2023</p>
+                    </div>
+                    <div class="scroll_item">
+                        <p class="item_label">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                        <p class="item_data">10.02.2023</p>
+                    </div>
+                    <div class="scroll_item">
+                        <p class="item_label">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                        <p class="item_data">10.02.2023</p>
+                    </div>
+                    <div class="scroll_item">
+                        <p class="item_label">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                        <p class="item_data">10.02.2023</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="chipLine_container">
+            <div class="container_item container-first">
+            </div>
+            <div class="container_item container-second">
+            </div>
+            <div class="container_item container-third">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul class="footer_list">
+            <li class="list_item list_item-active link">Terms & Conditions</li>
+            <li class="list_item link">Cookies</li>
+            <li class="list_item link">Contacts</li>
+            <li class="list_item link">Careers</li>
+            <li class="list_item link">Brand Guide</li>
+        </ul>
+        <div class="footer_container">
+            <p class="container_label">Our social media:</p>
+            <div class="container_flexbox">
+                <img src="./assets/image/Buttons1.png" alt="twiter" class="flexbox_image">
+                <img src="./assets/image/Buttons2.png" alt="facebook" class="flexbox_image">
+                <img src="./assets/image/Buttons3.png" alt="instagram" class="flexbox_image">
+                <img src="./assets/image/Buttons4.png" alt="linkedin" class="flexbox_image">
+                <img src="./assets/image/Buttons5.png" alt="youtube" class="flexbox_image">
+                <img src="./assets/image/Buttons6.png" alt="tictok" class="flexbox_image">
+                <img src="./assets/image/Buttons7.png" alt="telegram" class="flexbox_image">
+                <img src="./assets/image/Buttons8.png" alt="incontact" class="flexbox_image">
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/movement.js"></script>
+    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/burger.js"></script>
+</body>
+
+</html>

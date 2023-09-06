@@ -1,0 +1,14 @@
+@import './header/header.scss';
+@import './main/main.scss';
+@import './chipLine/chopLine.scss';
+@import './footer/footer.scss';
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #110A1D;
+    width: 1920px;
+    @media (max-width: 768px){
+        width: 768px;
+    }
+}

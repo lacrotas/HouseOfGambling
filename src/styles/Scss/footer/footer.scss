@@ -1,0 +1,89 @@
+@import '../uikit.scss';
+
+.footer {
+    display: flex;
+    width: 1912px;
+    height: 130px;
+    background-color: #1E1231;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 64px 64px 0px 0px;
+    border-width: 4px 4px 0px 4px;
+    border-style: solid;
+    border-color: #478BF9;
+
+    @media (max-width: 768px) {
+        width: 768px;
+        flex-direction: column;
+        height: 233px;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .footer_list {
+        margin-left: 140px;
+        margin-bottom: 24px;
+
+        @media (max-width: 768px) {
+            margin-left: 20px;
+        }
+
+        .list_item {
+            display: inline;
+            margin-left: 40px;
+
+            &:first-child {
+                margin-left: 0px;
+            }
+
+            @media (max-width: 768px) {
+                display: block;
+                margin-left: 0;
+                font-size: 14px;
+            }
+        }
+
+        .list_item-active {
+            color: #478BF9;
+            border-bottom: 1px solid #478BF9;
+        }
+    }
+
+    .footer_container {
+        margin-right: 140px;
+        text-align: right;
+        margin-bottom: 24px;
+        @media (max-width: 768px) {
+            margin-left: 60px;
+            text-align: left;
+        }
+        .container_label {
+            color: #fff;
+            font-size: 16px;
+            font-family: 'lexendRegular';
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+
+        .container_flexbox {
+            .flexbox_image {
+                width: 32px;
+                height: 32px;
+                margin-left: 8px;
+                @media (max-width: 768px) {
+                   width: 27px;
+                   height: 27px;
+                }
+                &:hover {
+                    cursor: pointer;
+                    filter: grayscale(70%);
+                }
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
