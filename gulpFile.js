@@ -2,6 +2,9 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 
+var browserSync = require('browser-sync').create();
+
+
 function buildStyles() {
   return gulp.src('./src/styles/Scss/**/*.scss')
     .pipe(sourcemaps.init())
@@ -14,3 +17,11 @@ exports.buildStyles = buildStyles;
 exports.watch = function () {
   gulp.watch('./src/styles/Scss/**/*.scss', buildStyles);
 };
+
+gulp.task('browser-sync', function() {
+  browserSync.init({
+      server: {
+          baseDir: "./src/"
+      }
+  });
+});

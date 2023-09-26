@@ -10,5 +10,5 @@ function OpenModal(){
 function CloseModal(){
     openButton.style.display = 'block';
     closeButton.style.display = 'none';
-    modal.style.left = -1000 + 'px';
+    modal.style.left = -110 + 'vw';
 }

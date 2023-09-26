@@ -6,7 +6,7 @@ const desctopScroll = 440;
 const mobileScroll = 330;
 
 function myScroll() {
-    if (window.screen.width > 768) {
+    if (window.screen.width > 1400) {
         scrollBar.style.top = 96 + (Math.round(scrollConatiner.scrollTop) / (scrollConatiner.scrollHeight / desctopScroll)) + 'px';
     } else {
         scrollBar.style.top = 60 + (Math.round(scrollConatiner.scrollTop) / (scrollConatiner.scrollHeight / mobileScroll)) + 'px';

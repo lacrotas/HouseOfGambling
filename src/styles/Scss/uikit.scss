@@ -66,10 +66,10 @@ $borderViolet: #9DADF2;
 }
 
 .modal{
-    width: 768px;
+    width: 100%;
     position: fixed;
     top: 74px;
-    left: -1000px;
+    left: -110vw;
     z-index: 10;
     height: 100%;
     background-color: $backgroundBlack;

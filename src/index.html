@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="styleSheet" href="./styles/Css/style.css"></link>
+    <link rel="styleSheet" href="./styles/Css/style.css">
+    </link>
 </head>
 
 <body>
     <header class="header">
         <div class="header_flexbox">
-            <div></div>
+            <img src="./assets/image/logo.png" alt="logo" />
             <ul class="flexbox_navigation">
                 <li class="navigation_item link">About us</li>
                 <li class="navigation_item link">Brands</li>
@@ -31,11 +32,16 @@
         </div>
     </header>
     <header class="header_small">
-        <button class="small_button-lang">
-            <img class="button_image-small" src="./assets/image/Union.png" alt="union" />
-        </button>
-        <img onclick="OpenModal()" class="small_image small_image-burger" src="./assets/image/burger.png" alt="burger" />
-        <img onclick="CloseModal()" class="small_image small_image-close" src="./assets/image/Close.png" alt="close" />
+        <img class="header_small-image" src="./assets/image/logoSmall.png" alt="logo" />
+        <div class="header_small-container">
+            <button class="small_button-lang">
+                <img class="button_image-small" src="./assets/image/Union.png" alt="union" />
+            </button>
+            <img onclick="OpenModal()" class="small_image small_image-burger" src="./assets/image/burger.png"
+                alt="burger" />
+            <img onclick="CloseModal()" class="small_image small_image-close" src="./assets/image/Close.png"
+                alt="close" />
+        </div>
     </header>
     <div class="modal">
         <ul class="modal_navigation">

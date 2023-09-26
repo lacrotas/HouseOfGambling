@@ -1,7 +1,7 @@
 @import '../uikit.scss';
 
 .header {
-    width: 1640px;
+    width: calc(100% - 280px);
     height: 96px;
     margin-left: 140px;
     margin-top: 16px;
@@ -10,7 +10,7 @@
     border: solid 4px #478BF9;
     border-radius: 64px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1550px) {
         display: none;
     }
 
@@ -49,16 +49,26 @@
 
 .header_small {
     display: none;
-    width: 748px;
+    width: calc(100% - 20px);
+    margin-left: 10px;
     height: 56px;
     background-color: $backgroundBlack;
     border: solid 4px $borderBlue;
     border-radius: 64px;
     margin: 10px;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 
-    @media (max-width: 768px) {
+    .header_small-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .header_small-image {
+            float: left;
+        }
+    }
+
+    @media (max-width: 1550px) {
         display: flex;
     }
 
@@ -69,6 +79,7 @@
         border: 2px solid $borderViolet;
         border-radius: 24px;
         margin-right: 4px;
+
         .button_image-small {
             width: 20px;
             height: 20px;
@@ -82,6 +93,6 @@
     }
 
     .small_image-close {
-       display: none;
+        display: none;
     }
 }
