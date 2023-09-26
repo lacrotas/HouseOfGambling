@@ -2,7 +2,7 @@
 
 .footer {
     display: flex;
-    width: 100%;
+    width: calc(100% - 8px);
     height: 130px;
     background-color: #1E1231;
     justify-content: space-between;
