@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'lexendRegular';
+    src: url(../../assets/fonts/Lexend-Regular.ttf);
+}
+@font-face {
+    font-family: 'lexendMedium';
+    src: url(../../assets/fonts/Lexend-Medium.ttf);
+}
+@font-face {
+    font-family: 'lexendSemiBold';
+    src: url(../../assets/fonts/Lexend-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'futuraPt';
+    src: url(../../assets/fonts/FuturaPT-BookObl.ttf);
+}
+
+$textWhite:#fff;
+$textGray:rgba($color: #fff, $alpha: 0.6);
+$textBlue: #478BF9;
+
+$backgroundBlack:#110A1D;
+$backgroundBlue:#478BF9;
+$backgroundGray: rgba($color: #fff, $alpha: 0.12);
+
+$borderBlue:#478BF9;
+$borderBlueDark: #3056ff;
+$borderViolet: #9DADF2;
+
+.link {
+    color: $textWhite;
+    font-size: 16px;
+    font-family: 'lexendRegular';
+
+    &:hover {
+        cursor: pointer;
+        color: $textGray;
+    }
+}
+.button{
+    color: $textWhite;
+    font-size: 16px;
+    font-family: 'lexendRegular';
+    padding: 14px;
+    background-color: $backgroundBlack;
+    border: 2px solid $borderViolet;
+    border-radius: 24px;
+    &:hover {
+        cursor: pointer;
+        border-color: $borderBlueDark;
+    }
+}
+.button_sign{
+    color: $textWhite;
+    font-size: 16px;
+    font-family: 'lexendRegular';
+    padding: 14px;
+    background-color: $backgroundBlue;
+    border: 2px solid $backgroundBlue;
+    border-radius: 24px;
+    &:hover {
+        cursor: pointer;
+        border-color: $borderBlueDark;
+        background-color: $borderBlueDark;
+    }
+}
+
+.modal{
+    width: 100%;
+    position: fixed;
+    top: 74px;
+    left: -3000px;
+    z-index: 10;
+    height: 100%;
+    background-color: $backgroundBlack;
+    transition: all 0.3s ease-out;
+    .modal_navigation{
+        margin-left: calc(50% - 150px);
+        padding: 0;
+        margin-top: 25px;
+        .navigation_item{
+            width: 272px;
+            list-style-type: none;
+            margin-top: 5px;
+        }
+    }
+    .modal_button{
+        margin-left: calc(50% - 150px);
+        width: 300px;
+        height: 46px;
+        display: block;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,98 @@
+@import '../uikit.scss';
+
+.header {
+    width: calc(100% - 280px);
+    height: 96px;
+    margin-left: 140px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    background-color: #110A1D;
+    border: solid 4px #478BF9;
+    border-radius: 64px;
+
+    @media (max-width: 1550px) {
+        display: none;
+    }
+
+    .header_flexbox {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .flexbox_navigation .navigation_item {
+            display: inline;
+            margin-left: 32px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        .flexbox_container .container_button {
+            display: inline;
+            margin-left: 14px;
+
+            .button_image {
+                margin: 0 8px 0 0;
+                width: 15px;
+                height: 15px;
+            }
+
+            &:first-child {
+                margin-left: 0;
+                padding: 14px 14px 14px 10px;
+            }
+        }
+    }
+}
+
+.header_small {
+    display: none;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    height: 56px;
+    background-color: $backgroundBlack;
+    border: solid 4px $borderBlue;
+    border-radius: 64px;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+    .header_small-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .header_small-image {
+            float: left;
+        }
+    }
+
+    @media (max-width: 1550px) {
+        display: flex;
+    }
+
+    .small_button-lang {
+        width: 36px;
+        height: 36px;
+        background-color: $backgroundBlack;
+        border: 2px solid $borderViolet;
+        border-radius: 24px;
+        margin-right: 4px;
+
+        .button_image-small {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .small_image {
+        width: 28px;
+        height: 28px;
+        margin-right: 14px;
+    }
+
+    .small_image-close {
+        display: none;
+    }
+}
