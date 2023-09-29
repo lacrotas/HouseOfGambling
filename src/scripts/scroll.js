@@ -2,13 +2,13 @@ let scrollBar = document.querySelector('.scroll_bar');
 
 let scrollConatiner = document.querySelector('.blog_scroll');
 
-const desctopScroll = 440;
-const mobileScroll = 330;
 
 function myScroll() {
+    let totalHeight = scrollConatiner.scrollHeight - scrollConatiner.clientHeight;
+
     if (window.screen.width > 1400) {
-        scrollBar.style.top = 96 + (Math.round(scrollConatiner.scrollTop) / (scrollConatiner.scrollHeight / desctopScroll)) + 'px';
+        scrollBar.style.top = ((scrollConatiner.scrollTop / totalHeight) * 307) + 96 + "px";
     } else {
-        scrollBar.style.top = 60 + (Math.round(scrollConatiner.scrollTop) / (scrollConatiner.scrollHeight / mobileScroll)) + 'px';
+        scrollBar.style.top = ((scrollConatiner.scrollTop / totalHeight) * 244) + 60 + "px";
     }
 }
